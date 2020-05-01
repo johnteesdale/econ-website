@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+svg {
+  font-family: museo-sans, sans-serif;
+}
+
 p {
   font-family: museo-sans, sans-serif;
   font-weight: 300;
@@ -138,6 +142,31 @@ div.section:first-of-type {
   margin: 150px auto;
 }
 
+.calculator {
+  background-color: #19416B;
+  padding: 25px 25px 15px;;
+  color: #EFEFEF;
+}
+
+input {
+  width:  100%;
+  margin-bottom: 15px;
+  background-color: #EFEFEF;
+  border:none;
+  font-size: 16px;
+  padding: 8px 10px;
+  text-align: right;
+  font-family: museo-sans, sans-serif;
+}
+
+label {
+  margin: 10px auto;
+}
+
+label h5 {
+  margin-bottom: 5px;
+}
+
 /* Editor's Note Style */
 
 div.editorsNote {
@@ -221,9 +250,13 @@ header .siteTitle h6{
   z-index: 100;
 }
 
+header .siteTitle h6:hover {
+  color: #10416B;
+}
+
 header .hamburgerMenu {
   position: fixed;
-  top: 20px;
+  top: 25px;
   right: 50px;
   width: 50px;
   z-index: 100;
@@ -232,7 +265,7 @@ header .hamburgerMenu {
 
 header .hamburgerMenu .hamburgerLine {
   height: 3px;
-  width: 40px;
+  width: 35px;
   background-color: #A70505;
   margin: 5px 0px;
 }
@@ -569,6 +602,20 @@ header #navMenu .container {
   margin-bottom: 60px;
 }
 
+#banks .calculator  input {
+  width: 94%;
+}
+
+#banks .calculator div:first-of-type {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-column-gap: 0px;
+}
+
+#banks .calculator div:first-of-type img {
+  margin: 110px auto 0px;
+}
+
 /* stock market styles */
 
 /* footer styles */
@@ -705,10 +752,77 @@ footer a {
     animation-fill-mode: both;
 }
 
+.entranceAnimation {
+  visibility: hidden;
+}
+
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear alternate infinite;
+}
+
+.pullUp {
+  animation-name: pullUp;
+	-webkit-animation-name: pullUp;
+
+	animation-duration: 2.1s;
+	-webkit-animation-duration: 2.1s;
+
+  animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+
+  transform-origin: 0% bottom;
+
+
+}
+
+@@keyframes pullUp {
+  0% {
+		transform: scaleY(0.1);
+	}
+  40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@-webkit-keyframes pullUp {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}
 }
 
 @keyframes dash {
