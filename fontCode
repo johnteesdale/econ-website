@@ -1,0 +1,67 @@
+Museo Sans 100
+
+font-family: museo-sans, sans-serif;
+font-weight: 100;
+font-style: normal;
+
+
+Museo Sans 100 Italic
+
+font-family: museo-sans, sans-serif;
+font-weight: 100;
+font-style: italic;
+
+
+Museo Sans 300
+
+font-family: museo-sans, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Museo Sans 300 Italic
+font-family: museo-sans, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+
+Museo Sans 500
+
+font-family: museo-sans, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Museo Sans 500 Italic
+
+font-family: museo-sans, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+
+Museo Sans 700
+
+font-family: museo-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Museo Sans 700 Italic
+
+font-family: museo-sans, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+Museo Sans 900
+
+font-family: museo-sans, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+
+Museo Sans 900 Italic
+
+font-family: museo-sans, sans-serif;
+font-weight: 900;
+font-style: italic;

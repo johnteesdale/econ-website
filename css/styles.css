@@ -1,0 +1,572 @@
+/* site wide styles*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: auto;
+  background-color: #EFEFEF;
+  color: #070707;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 110px;
+  color: #A70505;
+  -webkit-text-fill-color: #EFEFEF; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #A70505;
+  letter-spacing: 5px;
+  line-height: 120px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #1762A0;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size:25px;
+}
+
+h4 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+}
+
+h6 {
+ font-size: 14px;
+ color: #A70505;
+ font-family: museo-sans, sans-serif;
+ font-weight: 900;
+ font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  font-size: 16px;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.floatRight {
+  float: right;
+}
+
+.content {
+  max-width: 1241px;
+  margin: auto;
+  padding: 0px 20px
+}
+
+div.section {
+  margin: 150px auto;
+  clear: both;
+}
+
+div.section:first-of-type {
+  margin: 60px auto 150px;
+}
+
+.contentPages .section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 60px;
+}
+
+.contentPages .sectionAlt1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 60px;
+  margin: 150px auto;
+}
+
+.contentPages .sectionAlt2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 60px;
+  margin: 150px auto;
+}
+
+.contentPages .sectionAlt3{
+  display: block;
+  margin: 150px auto;
+}
+
+/* Editor's Note Style */
+
+div.editorsNote {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-column-gap: 10px;
+  max-width: 360px;
+  margin-top: 30px;
+}
+
+div.editorsNote h5{
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+div.editorsNote p {
+  font-size: 14px;
+}
+
+/* TabBox Style */
+
+.tabBox{
+  color: #EFEFEF;
+  margin-bottom: 150px;
+}
+
+.tabBoxContent {
+  padding: 25px 60px;
+}
+
+.tabSelector {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.openedTab, .closedTab {
+  float: right;
+  right: 20px;
+}
+
+.tabOption1.tabBoxContent {
+  display: grid;
+  float: none;
+}
+
+.tabOption2.tabBoxContent, .tabOption3.tabBoxContent, h5.tabOption2.openedTab, h5.tabOption3.openedTab{
+  display: none;
+}
+
+.tabBoxContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 30px;
+}
+
+.tabOptions .tabSelector {
+  display: inline-block;
+}
+
+.tabOptions .tabSelector h5 {
+  display: inline-block;
+}
+
+div.aboveTabBox {
+  margin-bottom: 40px !important;
+}
+
+/* header styles */
+
+header {
+  z-index: 100;
+}
+
+header .siteTitle h6{
+  margin: 30px auto 0px;
+  color: #A70505;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 100;
+}
+
+header .hamburgerMenu {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  width: 50px;
+  z-index: 100;
+  cursor:pointer;
+}
+
+header .hamburgerMenu .hamburgerLine {
+  height: 3px;
+  width: 40px;
+  background-color: #A70505;
+  margin: 5px 0px;
+}
+
+header .hamburgerMenu:hover .hamburgerLine {
+  background-color: #10416B;
+}
+
+header div.crashCourse {
+  max-width: 1240;
+  padding: 0px 40px;
+}
+
+header div.crashCourse h3 {
+  margin-bottom: 10px;
+}
+
+header div.currentPage p {
+  color: #EFEFEF;
+  font-size: 14px;
+  margin-bottom: 0px;
+  background-color: #2562A0;
+  padding: 5px 6px 5px 6px;
+  display: inline;
+}
+
+header div.currentPage p span {
+  font-weight: 900;
+  padding-left: 30px;
+  font-size: 10px;
+}
+
+/* hamburger menu styles */
+
+header #navMenu {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(239,239,239,.95);
+  z-index: 90;
+  position: fixed;
+  top: 0px;
+}
+
+header #navMenu #menuNav {
+  max-width: 1240px;
+  margin-left: auto;
+}
+
+header #navMenu #menuNav {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header #navMenu .container {
+  max-width: 1240px;
+  padding: 20px;
+  margin: auto;
+}
+
+#menuNav h3 {
+  font-size: 27px;
+  line-height: 32px;
+  color: #A70505;
+  font-weight: 700;
+  grid-column: 1fr;
+}
+
+#menuNav h3 span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#navMenu h2 {
+  font-size: 60px;
+  margin: 160px auto 40px;
+}
+
+#navMenu img {
+  position: fixed;
+  bottom: -60px;
+  right: -50px;
+}
+
+#menuNav h3:hover span {
+  color: #6EA8D8;
+}
+
+/* home page styles */
+
+#homePage .content p {
+  max-width: 480px;
+  font-size: 22px;
+  line-height: 27px;
+  margin: 50px 0px;
+}
+
+#homepageGraphic #mainHomepageGraphic {
+  position: absolute;
+  top: 30px;
+  right: -90px;
+}
+
+#homepageGraphic #gearMidBlue{
+  position: absolute;
+  top:600px;
+  right: 530px;
+  animation: spin 5s linear infinite;
+}
+
+#homepageGraphic #gearDarkBlue {
+  position: absolute;
+  top:410px;
+  right: 550px;
+  animation: spin 3s linear infinite;
+}
+
+#homepageGraphic #gearDullBlue {
+  position: absolute;
+  top:540px;
+  right: 40px;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#homePage h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+#homePage div.section:nth-of-type(2) {
+  margin-top: 350px;
+}
+
+#homePage #homepageNav {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#homePage h3 {
+  font-size: 27px;
+  line-height: 32px;
+  color: #A70505;
+  font-weight: 700;
+  grid-column: 1fr;
+}
+
+#homePage h3 span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#homepageNav h3:hover span {
+  color: #6EA8D8
+}
+
+/* government budget styles */
+
+#nationalBudget .intro h2, #nationalBudget .intro p{
+  max-width: 367px;
+}
+
+#nationalBudget .intro img {
+  position: absolute;
+  right: -175px;
+  top: 215px;
+}
+
+#nationalBudget .intro {
+  margin-bottom: 250px;
+}
+
+#nationalBudget p.attention {
+  color: #A71303;
+  font-weight: 900;
+  margin-top: 150px;
+}
+
+.govSpendingTypes {
+
+}
+
+.govSpendingTypes .tabOptions {
+  display: grid;
+  grid-template-columns: 67% 33%;
+}
+
+.mandatorySpending {
+  background-color: #2562A0;
+}
+
+.discretionarySpending {
+  background-color: #19416B;
+}
+
+.govSpendingTypes .centerSeals {
+  margin: 0px auto 20px;
+  display: table;
+}
+
+.govSpendingTypes img {
+  margin: 0px 20px;
+}
+
+#nationalBudget .attention2 {
+  color: #1762A0;
+  max-width: 360px;
+  float: right;
+  font-weight: 900;
+  margin-top: 40px;
+}
+
+.debtOwners .tabOptions {
+  display: grid;
+  grid-template-columns: 47% 28% 25%;
+}
+
+.usPublicDebt {
+  background-color: #7D0407;
+}
+
+.foreignDebt {
+  background-color: #A7050E;
+}
+
+.intragovDebt {
+  background-color: #BF1D1D;
+}
+
+/* fed styles */
+
+#federalReserve .intro p {
+  max-width: 360px;
+}
+
+#federalReserve .intro img {
+  position: absolute;
+  right: -100px;
+  top: 344px;
+}
+
+.dualMandate .tabOptions {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.dualMandate .tabBoxContent {
+  grid-template-columns: 50% 50%;
+}
+
+.employment {
+  background-color: #19416B;
+}
+
+.inflation {
+  background-color: #1762A0;
+}
+
+.attention3 {
+  font-size: 14px;
+  width: 80%;
+  float: right;
+}
+
+.openMarketOp h4 {
+  color: #7D0404;
+}
+
+.openMarketOp h4.alt {
+  color: #10416B;
+}
+
+.openMarketOp img {
+  margin: 25px auto 70px;
+}
+
+/* banks styles */
+
+#banks .intro p, #banks .intro h1, #banks .intro h2{
+  float: right;
+  clear: both;
+}
+
+#banks .intro h2 {
+  width: 360px;
+  margin-top: 100px;
+}
+
+#banks .intro p {
+  max-width: 360px;
+}
+
+#banks .intro img {
+  position: absolute;
+  left: -300px;
+  top: 150px;
+}
+
+.bankTypes img {
+  margin: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#banks .aboveTabBox {
+  margin: 40px auto;
+}
+
+#banks .sectionAlt1 img {
+  margin-bottom: 60px;
+}
+
+/* stock market styles */
+
+/* footer styles */
+
+footer {
+  background-color: #10416B;
+  width: 100%;
+  color: #EFEFEF;
+  height: 100px;
+}
+
+footer p.footer {
+  text-align: center !important;
+  margin: 0px;
+  font-size: 12px !important;
+  width: 100vw;
+  padding-top: 70px;
+}
+
+footer a {
+  text-decoration: underline;
+  poi
+}
