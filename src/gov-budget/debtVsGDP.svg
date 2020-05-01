@@ -80,7 +80,7 @@
           <line id="Line_282" data-name="Line 282" x1="19.967" y2="25.373" transform="translate(559.081)" fill="none" stroke="#7d0404" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
         </g>
       </g>
-      <g id="Group_504" data-name="Group 504" transform="translate(739.468 5138.987)">
+      <g class="displayNone" id="Group_504" data-name="Group 504" transform="translate(739.468 5138.987)">
         <g id="Group_503" data-name="Group 503">
           <line id="Line_283" data-name="Line 283" x1="19.967" y2="3.927" transform="translate(0 290.416)" fill="none" stroke="#1762a0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
           <line id="Line_284" data-name="Line 284" x1="19.967" y2="7.29" transform="translate(19.967 283.126)" fill="none" stroke="#1762a0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
