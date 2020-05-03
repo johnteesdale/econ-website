@@ -142,6 +142,12 @@ div.section:first-of-type {
   margin: 150px auto;
 }
 
+.contentPages .sectionAlt4 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 60px;
+}
+
 .calculator {
   background-color: #19416B;
   padding: 25px 25px 15px;;
@@ -676,6 +682,10 @@ header #navMenu .container {
 
 .ipoSection h4 {
   color: #10416B;
+}
+
+#stockMarket .calculator input {
+  width: 93%;
 }
 
 /* footer styles */
