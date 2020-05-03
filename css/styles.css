@@ -831,7 +831,7 @@ footer a {
   animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 
-  transform-origin: 0% bottom;
+  transform-origin: 0% 0%;
 
 
 }
