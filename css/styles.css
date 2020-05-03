@@ -585,7 +585,7 @@ header #navMenu .container {
 #banks .intro img {
   position: absolute;
   left: -300px;
-  top: 150px;
+  top: 210px;
 }
 
 .bankTypes img {
@@ -618,6 +618,66 @@ header #navMenu .container {
 
 /* stock market styles */
 
+#stockMarket .intro img {
+  position: absolute;
+  top: 300px;
+  left:-150px;
+}
+
+#stockMarket .intro h1 {
+  text-align: right;
+  position: relative;
+}
+
+#stockMarket .intro h2 {
+  margin-top: 60px;
+  width: 360px;
+}
+
+#stockMarket .intro h2, #stockMarket .intro p {
+  max-width: 360px;
+  align-content: right;
+  float: right;
+}
+
+.stockOwners.tabBox .ownStock {
+  background-color: #7D0407;
+}
+
+.stockOwners.tabBox .dontOwnStock {
+  background-color: #A7050E;
+}
+
+.stockOwners .tabOptions {
+  display: grid;
+  grid-template-columns: 47% 53%;
+}
+
+.stockOwners .tabSelector h5 {
+  font-size: 14px;
+}
+
+.stockOwners .tabBoxContent {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ipoSection .step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+  margin: 100px auto;
+  max-width: 820px;
+}
+
+.ipoSection img {
+  margin: auto;
+  display: block;
+}
+
+.ipoSection h4 {
+  color: #10416B;
+}
+
 /* footer styles */
 
 footer {
@@ -637,7 +697,6 @@ footer p.footer {
 
 footer a {
   text-decoration: underline;
-  poi
 }
 
 /* animation */
