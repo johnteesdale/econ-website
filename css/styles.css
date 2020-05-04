@@ -496,6 +496,13 @@ header #navMenu .container {
   margin: 0px 20px;
 }
 
+.mandatorySpending.tabBoxContent.tabOption1 div img {
+  max-height: 175px;
+    margin-top: 32px;
+    float: left;
+    width: 350px;
+}
+
 #nationalBudget .attention2 {
   color: #1762A0;
   max-width: 360px;
