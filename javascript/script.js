@@ -1,6 +1,8 @@
 var onOff = 0;
 var drop = 1;
 var update_loop = setInterval(hideNavImg, 1000);
+var update_loop2 = setInterval(hideNavImg2, 1000);
+
 
 
 function hamburgerMenuOpen() {
@@ -120,4 +122,18 @@ function hideNavImg() {
   }
 }
 
+function hideNavImg2() {
+  var h = window.innerHeight;
+  console.log(h);
+  if (h < 760) {
+    $("#navMenu img").hide();
+    console.log('hidden');
+  }else {
+    $("#navMenu img").show();
+    console.log("shown");
+  }
+}
+
 hideNavImg();
+
+hideNavImg2();
