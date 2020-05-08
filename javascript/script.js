@@ -1,5 +1,5 @@
 var onOff = 0;
-
+var drop = 1;
 
 function hamburgerMenuOpen() {
 
@@ -40,4 +40,48 @@ function tabOption3() {
   $(".tabOption2").css("display", "none");
   $(".tabOption3").css("display", "grid");
   console.log("work3");
+}
+
+
+function dropdownMenu() {
+  console.log("click work");
+  if (drop < 2) {
+    $(".dropdownMenu").css("position", "absolute");
+    $(".dropdownMenu").show();
+    drop = 3;
+    console.log(drop);
+  } else {
+  $(".dropdownMenu").hide();
+  drop = 1;
+  console.log("else worked");
+}
+}
+
+function fractionalReserveBankingCalculator() {
+  var bankBalance = document.getElementById("bankBalance").value
+  var reserveReq = document.getElementById("reserveReqNum").value
+  if(isNaN(bankBalance) === false && isNaN(reserveReq) === false) {
+    $(".output").css("color", "#070707");
+    parseFloat(bankBalance);
+    parseFloat(reserveReq);
+    var economy = bankBalance*(1/(reserveReq/100));
+    document.getElementById("economy").innerHTML = "$"+economy
+  } else {
+    console.log("else");
+  }
+}
+
+
+function stockMarketCalculator() {
+  var start = document.getElementById("start").value
+  var years = document.getElementById("years").value
+  if(isNaN(start) === false && isNaN(years) === false) {
+    $(".output").css("color", "#070707");
+    start = parseFloat(start);
+    years = parseFloat(years);
+    var stockReturn = (start + (start*.1*years));
+    document.getElementById("return").innerHTML = "$"+stockReturn
+  } else {
+    console.log("else");
+  }
 }

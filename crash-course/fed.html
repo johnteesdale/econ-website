@@ -32,10 +32,16 @@
       </div>
     <div style="height:110px">
     </div>
-    <div class="crashCourse">
+    <div onclick="dropdownMenu()" class="crashCourse">
       <h3>Crash Course</h3>
       <div class="currentPage">
         <p>The Federal Reserve <span>&#9660;</span></p>
+        <div class="dropdownMenu inPageNav">
+          <a href="#fedLocations"><p>The Federal Banks of the United States</p></a>
+          <a href="#dualMandate"><p>The Dual Mandate</p></a>
+          <a href="#reserveReq"><p>Reserve Requirements</p></a>
+          <a href="#openMarket"><p>Open Market Operations</p></a>
+        </div>
       </div>
     </div>
     <div id="navMenu">
@@ -59,7 +65,7 @@
       <p>Referred to simply as the Fed, it has broad power to take measures to ensure there is financial stability in the system. It is also the main regulator of the country’s financial institutions. Banks will often turn to the Fed as a last resort where they can borrow money when there is nowhere else to go.</p>
       <img class="slideInRight animated" src="../src/fed/fedSeal.svg" alt="Federal Reserve Seal">
     </div>
-    <div style="margin-top:250px;" class="section aboveTabBox">
+    <div id="fedLocations" style="margin-top:250px;" class="section aboveTabBox">
       <div>
         <h2>The Federal Banks of the United States</h2>
         <p>The Federal Reserve system is made up of 12 regional Federal Banks. These are based in Boston, New York, Philadelphia, Cleveland, Richmond, Atlanta, Chicago, St. Louis, Minneapolis, Kansas City, Dallas, and San Francisco. Each regional Federal Bank has its own board of directors and acts semi-autonomous from each other. </p>
@@ -71,7 +77,7 @@
     <div style="margin-top:40px;" class="sectionAlt3">
       <img src="../src/fed/regionalFedLocations.svg" alt="Regiional Federal Reserve Locations">
     </div>
-    <div class="sectionAlt1">
+    <div id="dualMandate" class="sectionAlt1">
       <div class="tabBox dualMandate">
         <div class="tabOptions">
           <div onclick="tabOption1()" class="employment tabSelector">
@@ -116,7 +122,7 @@
         </ul>
       </div>
     </div>
-    <div class="sectionAlt2">
+    <div id="reserveReq" class="sectionAlt2">
       <div>
         <h2>Reserve Requirements</h2>
         <p>The Fed requires that all commercial banks must maintain a certain amount of cash in reserve. The reserve balance that banks must maintain is typically a percentage of their total interest-bearing and non-interest-bearing checking account deposits (currently 3% to 10%). In other words, the amount of a bank’s required reserves will fluctuate depending on their account totals. The reserve is very important because it helps to ensure that the bank will always be able to give you your money when you ask for it.</p>
@@ -138,7 +144,7 @@
         <img style="margin-top: 50px;" src="../src/fed/reserveRequirements.svg">
       </div>
     </div>
-    <div class="section openMarketOp">
+    <div id="openMarket" class="section openMarketOp">
       <div>
         <h2>Open Market Operations</h2>
         <p>The Fed's most affective tool is the buying and selling of government securities in its open market operations. Government securities include treasury bonds, notes, and bills. The Fed buys securities when it wants to increase the flow of money and credit, and sells securities when it wants to reduce the flow.</p>

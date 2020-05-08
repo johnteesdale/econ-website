@@ -36,8 +36,14 @@
     </div>
     <div class="crashCourse">
       <h3>Crash Course</h3>
-      <div class="currentPage">
+      <div onclick="dropdownMenu()" class="currentPage">
         <p>Banks <span>&#9660;</span></p>
+        <div class="dropdownMenu inPageNav">
+          <a href="#typesOfBanks"><p>Types of Banks</p></a>
+          <a href="#banksMoney"><p>How Banks Make Money</p></a>
+          <a href="#frackBank"><p>Fractional Reserve Banking</p></a>
+          <a href="#danger"><p>The Dangers of Fractional Reserve Banking</p></a>
+        </div>
       </div>
     </div>
     <div id="navMenu">
@@ -54,7 +60,7 @@
     </div>
   </header>
   <div class="content">
-    <div class="sectionAlt3 intro">
+    <div id="typesOfBanks" class="sectionAlt3 intro">
       <h1>Banks</h1>
       <p>Many people see banks as being a place where you save money, open a checking account and get loans, but they often don’t understand the larger picture of a banks functions.</p>
       <h2>Types of Banks</h2>
@@ -80,7 +86,7 @@
         <p>Credit unions are similar to retail and commerical banks. They are a not-for-profit organizations owned by their customers (while investors own most banks). Credit unions offer products and services more or less identical to most retail and commercial banks. The main difference is that credit union members share some characteristics in common (where they live, their occupation, or organizations they belong to, for example).</p>
       </div>
     </div>
-    <div class="sectionAlt4 aboveTabBox">
+    <div id="banksMoney" class="sectionAlt4 aboveTabBox">
       <div>
         <h2>How Banks Make Money</h2>
         <p>A person deposits money into their bank account, the bank then can then lend other people that money. The depositing customer gains a small amount of money in return (interest on savings accounts), and then lending customer pays a larger amount of money to the bank in return (interest on loans). To make money for itself, the bank keeps the difference between the loan interest and the savings account interest. Another way that banks have begun to make money is by charging customer fees to use the services that banks offer or charging accounts below a certain amount to keep their money in the bank.</p>
@@ -98,7 +104,7 @@
     <div class="sectionAlt3 aboveTabBox">
       <img src="../src/banks/loan-diagram.svg" alt="Loan Diagram">
     </div>
-    <div class="section aboveTabBox">
+    <div id="frackBank" class="section aboveTabBox">
       <div>
         <p>The primary and most important way that banks make money is through loans. Banks use the money given to them by customers who deposit their money into the bank to lend out to other people who are looking for loans for homeownership, to start a new business or many other things. While most people do not have enough money to make any kind of significant loan, banks are able to pool many people’s money together in order to make a significantly big loan to get a reliable return on their investment.</p>
       </div>
@@ -121,6 +127,10 @@
         <p>In the U.S., the Federal Reserve sets a reserve requirement—a minimum that banks must actually have set aside. Banks must hold that money as cash in vaults or as deposits with Federal Reserve Banks. For financial institutions with more than $124.2 million in liabilities, the reserve requirement is currently 10 percent. ﻿In other words, those banks can lend out $90 of every $100 their customers deposit.</p>
         <p>The supply of money grows when banks show money as deposits while simultaneously lending the funds out as loans. When you deposit money into your account, the bank shows 100 percent of the money in your account balance. But the bank is allowed to lend 90 percent of your deposit to other customers. This fractional reserve banking allows banks to greatly expand the money supply which enables economic growth.</p>
         <div class="calculator">
+          <script>
+            var update_loop = setInterval(fractionalReserveBankingCalculator, 1000);
+            fractionalReserveBankingCalculator();
+          </script>
           <h4>Fractional Reserve Calculator</h4>
           <p>Enter in your bank account balance and set a fractional reserve rate to find out how much extra money your account is adding to your local economy.</p>
           <div>
@@ -129,21 +139,21 @@
             </div>
             <div>
               <label><h5>Bank Account Balance</h5>
-                <input placeholder="$1,000"></input>
+                <input id="bankBalance" placeholder="$1,000"></input>
               </label>
               <label><h5>Reserve Requirement<h5>
-                <input placeholder="10%"></input>
+                <input id="reserveReqNum" placeholder="10%"></input>
               </label>
             </div>
           </div>
             <div style="height:4px; background-color:#EFEFEF; margin-bottom:15px;"></div>
             <label><h5>Total Money Added to the Economy<h5>
-              <input placeholder="$10,000"></input>
+              <p id="economy" class="output">$10,000</p>
             </label>
         </div>
       </div>
     </div>
-    <div class="sectionAlt1">
+    <div id="danger" class="sectionAlt1">
       <div>
         <img style="width:100%;" src="../src/banks/greatDepression.svg" alt="Unemployed Men from the Great Depression">
       </div>

@@ -318,6 +318,31 @@ header div.currentPage p span {
   font-size: 10px;
 }
 
+header .dropdownMenu a {
+  display: block;
+  margin: 0px;
+  padding: 3px 0px;
+}
+
+header .dropdownMenu {
+  display: none;
+  background: #2562A0;
+  padding: 5px;
+  margin-left: -5px;
+  z-index: 120;
+}
+
+header .dropdownMenu a:hover {
+  text-decoration: underline;
+  color: #efefef;
+}
+
+div.currentPage {
+  background-color: #2562A0;
+  padding: 5px;
+  float: left;
+}
+
 /* hamburger menu styles */
 
 header #navMenu {
@@ -635,6 +660,13 @@ header #navMenu .container {
 
 #banks .calculator div:first-of-type img {
   margin: 110px auto 0px;
+}
+
+.output {
+  padding: 8px 10px;
+  background-color: #EFEFEF;
+  color: grey;
+  text-align: right;
 }
 
 /* stock market styles */

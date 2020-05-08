@@ -35,8 +35,14 @@
     </div>
     <div class="crashCourse">
       <h3>Crash Course</h3>
-      <div class="currentPage">
+      <div onclick="dropdownMenu()" class="currentPage">
         <p>The National Budget <span>&#9660;</span></p>
+        <div class="dropdownMenu inPageNav">
+          <a href="#govIncome"><p>Government Income</p></a>
+          <a href="#govSpending"><p>Government Spending</p></a>
+          <a href="#deficit"><p>The Deficit</p></a>
+          <a href="#govDebt"><p>Government Debt</p></a>
+        </div>
       </div>
     </div>
     <div id="navMenu">
@@ -60,7 +66,7 @@
       <p>Some budget expenses are mandatory spending such as money earmarked for Medicare. Other spending is discretionary and needs to get approved through the passage of  appropriation bills.</p>
       <img class="slideInRight animated" src="../src/gov-budget/capitalbuilding.svg" alt="Captial Building">
     </div>
-    <div class="sectionAlt1">
+    <div id="govIncome" class="sectionAlt1">
       <div>
         <img class="rotateIn animated" src="../src/gov-budget/2000NationalIncome.svg" alt="Government Budget for 2000">
       </div>
@@ -83,7 +89,7 @@
         <img src="../src/gov-budget/2020NationalIncome.svg" alt="Government Budget for 2020">
       </div>
     </div>
-    <div class="sectionAlt2 aboveTabBox">
+    <div id="govSpending" class="sectionAlt2 aboveTabBox">
       <div>
         <h2>Government Spending</h2>
         <p>There are two types of spending in the federal budget process: discretionary and mandatory. The box below further explains both conecepts in detail. In 2020, 67% of government spending was mandatory and the other 33% is discretionary spending.</p>
@@ -139,7 +145,7 @@
         <p>Add a section that just brief defines the what the deficit is</p>
       </div>
     </div>
-    <div class="sectionAlt2">
+    <div id="deficit" class="sectionAlt2">
       <div>
         <h2>The Deficit</h2>
         <p>The expected budget deficit for 2020 is estimated at $1.101 trillion (the difference between $3.645 trillion in revenue and $4.746 trillion in spending). This difference in budgeting and revenue is added to the existing national debt.</p>
@@ -443,7 +449,7 @@
         </div>
       </div>
     </div>
-    <div class="sectionAlt2">
+    <div id="govDebt" class="sectionAlt2">
       <div>
         <h2>Government Debt</h2>
         <p>The national debt of the United States is a measurement of how much the government owes its creditors. Since the government almost always spends more than it takes in, the national debt continues to rise. </p>

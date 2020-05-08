@@ -36,8 +36,14 @@
     </div>
     <div class="crashCourse">
       <h3>Crash Course</h3>
-      <div class="currentPage">
+      <div onclick="dropdownMenu()" class="currentPage">
         <p>The Stock Market <span>&#9660;</span></p>
+        <div class="dropdownMenu inPageNav">
+          <a href="#whatStock"><p>What are Stocks?</p></a>
+          <a href="#stockMoney"><p>How Stocks Make People Money</p></a>
+          <a href="#impact"><p>The Impact of the Stock Market</p></a>
+          <a href="#ipo"><p>Why Companies Sell Stock to the Public</p></a>
+        </div>
       </div>
     </div>
     <div id="navMenu">
@@ -58,7 +64,7 @@
       <div>
         <img class="slideInLeft animated" src="../src/stock-market/bull.svg" alt="Charging Bull on Wall Street">
       </div>
-      <div>
+      <div id="whatStock">
         <h1>The<br>STOCK<br>MARKET</h1>
         <p>The stock market is a market for the trading of stocks and shares in companies. These include securities listed on a stock exchange as well as those traded privately. A stock market is sometimes also known as an equity market. In layman’s terms the stock market is a place where individuals or companies can buy, sell and trade stock for public owned companies.</p>
         <h2>What are Stocks?</h2>
@@ -67,7 +73,7 @@
         <p>While a piece of stock, also known as a share, represents ownership in a company the percentage of ownership from a single share is so small that it is basically insignificant. Most companies that are listed on the stock exchange issue ten or even hundreds of millions of stocks. With the exception of the founders of companies, most people or even institutions usually own only a small percentage of a company’s stock.</p>
       </div>
     </div>
-    <div class="section">
+    <div id="stockMoney" class="section">
       <div>
         <h2>How Stocks Make People Money</h2>
         <p>Stock generates money for their investors in two ways, through dividends or through an increase in the value of the stock. Most stocks that people can buy offer dividends, which are usually quarterly payments by a company to its shareholders that come from the company’s profits. The other way that people can earn money from stock is by selling the stock to another person or entity when the stock price has gone up in value which has the possibility of selling for many times over what the individual initially bought the stock for. </p>
@@ -76,20 +82,24 @@
       <div>
         <p style="margin-top:92px">The 10% return per year is based on the two most common ways that people generate wealth from the stock market, the increase in stock price for a company and through the return of dividends from stock in a company. </p>
         <div class="calculator">
+          <script>
+            var update_loop = setInterval(stockMarketCalculator, 1000);
+            stockMarketCalculator();
+          </script>
           <h4>Why You Should Invest in the Stock Market</h4>
           <div>
             <div>
               <label><h5>Money Invested in the Stock Market</h5>
-                <input placeholder="$10,000"></input>
+                <input id="start" placeholder="$10,000"></input>
               </label>
               <label><h5>Years that Money is Left in Stock Market<h5>
-                <input placeholder="10%"></input>
+                <input id="years" placeholder="10"></input>
               </label>
             </div>
           </div>
             <div style="height:4px; background-color:#EFEFEF; margin-bottom:15px;"></div>
             <label><h5>Expected Return on Investment<h5>
-              <input placeholder="$20,000"></input>
+              <p id="return" class="output">$10,000</p>
             </label>
         </div>
       </div>
@@ -111,7 +121,7 @@
         <img src="../src/stock-market/growthToMil.svg" alt="Wealth Growth over Time">
       </div>
     </div>
-    <div class="sectionAlt2">
+    <div id="impact" class="sectionAlt2">
       <div>
         <h2>The Impact of the Stock Market</h2>
         <p>The Stock Market has a direct affect on 51% of Americans. 51% of American households own at least a little bit of stock. This stock for most people is usually owned through various pension plans and 401(k)s.</p>
@@ -153,7 +163,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div id="ipo" class="section">
       <div>
         <h2>Why Companies Sell Stock to the Public</h2>
         <p>Companies sell stocks to get funds expand. When people start a business, they often pay for it with personal loans or even their credit cards. Once the company grows, they can get commerical bank loans. They can also sell bonds to individual investors.</p>
