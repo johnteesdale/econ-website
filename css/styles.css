@@ -544,6 +544,10 @@ header #navMenu .container {
   top: 244px;
 }
 
+.dualMandate {
+  margin-top: 50px;
+}
+
 .dualMandate .tabOptions {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -559,6 +563,10 @@ header #navMenu .container {
 
 .inflation {
   background-color: #1762A0;
+}
+
+.inflation.tabBoxContent {
+  grid-template-columns: 40% 60%;
 }
 
 .attention3 {
