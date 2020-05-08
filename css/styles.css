@@ -709,11 +709,40 @@ footer p.footer {
   margin: 0px;
   font-size: 12px !important;
   width: 100vw;
-  padding-top: 70px;
 }
 
 footer a {
   text-decoration: underline;
+}
+
+footer .footerNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1241px;
+  padding: 20px 20px 30px;
+  grid-column-gap: 60px;
+  margin:auto;
+}
+
+footer .footerNav h6 {
+  color: #EFEFEF;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer .footerNav a {
+  text-decoration: none
+}
+
+/* credits style */
+
+#credits .content h3 {
+  color:#1762A0;
+  margin-bottom: 20px;
+}
+
+#credits br {
+  height: 20px;
 }
 
 /* animation */
