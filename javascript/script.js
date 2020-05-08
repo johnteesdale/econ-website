@@ -1,5 +1,7 @@
 var onOff = 0;
 var drop = 1;
+var update_loop = setInterval(hideNavImg, 1000);
+
 
 function hamburgerMenuOpen() {
 
@@ -20,26 +22,46 @@ function hamburgerMenuOpen() {
   }
 }
 
-function tabOption1(){
+function tabOption1() {
   $(".tabOption1").css("display", "grid");
-  $(".tabOption2").css("display", "none");
-  $(".tabOption3").css("display", "none");
+  $(".tabOption1.openedTab").css("display", "grid");
+  $(".tabOption1.closedTab").css("display", "none");
 
-  console.log("work1");
+  $(".tabOption2").css("display", "none");
+  $(".tabOption2.openedTab").css("display", "none");
+  $(".tabOption2.closedTab").css("display", "grid");
+
+  $(".tabOption3").css("display", "none");
+  $(".tabOption3.openedTab").css("display", "none");
+  $(".tabOption3.closedTab").css("display", "grid");
 }
 
 function tabOption2() {
   $(".tabOption1").css("display", "none");
+  $(".tabOption1.openedTab").css("display", "none");
+  $(".tabOption1.closedTab").css("display", "grid");
+
   $(".tabOption2").css("display", "grid");
+  $(".tabOption2.openedTab").css("display", "grid");
+  $(".tabOption2.closedTab").css("display", "none");
+
   $(".tabOption3").css("display", "none");
-  console.log("work2");
+  $(".tabOption3.openedTab").css("display", "none");
+  $(".tabOption3.closedTab").css("display", "grid");
 }
 
 function tabOption3() {
   $(".tabOption1").css("display", "none");
+  $(".tabOption1.openedTab").css("display", "none");
+  $(".tabOption1.closedTab").css("display", "grid");
+
   $(".tabOption2").css("display", "none");
+  $(".tabOption2.openedTab").css("display", "none");
+  $(".tabOption2.closedTab").css("display", "grid");
+
   $(".tabOption3").css("display", "grid");
-  console.log("work3");
+  $(".tabOption3.openedTab").css("display", "grid");
+  $(".tabOption3.closedTab").css("display", "none");
 }
 
 
@@ -85,3 +107,17 @@ function stockMarketCalculator() {
     console.log("else");
   }
 }
+
+function hideNavImg() {
+  var h = window.innerHeight;
+  console.log(h);
+  if (h < 760) {
+    $("#navMenu .container img").hide();
+    console.log('hidden');
+  }else {
+    $("#navMenu .container img").show();
+    console.log("shown");
+  }
+}
+
+hideNavImg();
